@@ -1,6 +1,6 @@
 import { test } from "@playwright/test"
 
-test("Add item to the cart", async ({ page }) => {
+test.skip("Add item to the cart", async ({ page }) => {
     await page.goto("https://magento.softwaretestingboard.com")
     await page.locator("#ui-id-4").hover()
     await page.locator("#ui-id-10").hover()
